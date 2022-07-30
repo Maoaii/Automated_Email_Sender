@@ -1,6 +1,7 @@
 from tkinter import *
 from emailsenderbrain import EmailSender
 from tkinter import messagebox
+from tkinter.ttk import *
 
 
 class EmailSenderUI:
@@ -67,16 +68,24 @@ class EmailSenderUI:
         self.window.mainloop()
 
     def send_email(self):
-        has_name_placeholder = self.name_placeholder_state.get() == 1
-        has_date_placeholder = self.date_placeholder_state.get() == 1
+        has_name_placeholder = self.name_placeholder_state.get()
+        has_date_placeholder = self.date_placeholder_state.get()
 
         receivers = self.receiver_box.get("1.0", END).split()  # Transform into a list
         email_subject = self.email_subject_box.get("1.0", END)
 
         if has_name_placeholder:
             names = self.names_box.get("1.0", END).split()  # Transform into a list
+            # Check if there are enough names for the amount of emails to be set
+            if len(receivers) != len(names):
+                messagebox.showwarning(title="Invalid number of names", message="Invalid number of names.")
+                return
         if has_date_placeholder:
             dates = self.dates_box.get("1.0", END).split()  # Transform into a list
+            # Check if there are enough dates for the amount of emails to be set
+            if len(receivers) != len(dates):
+                messagebox.showwarning(title="Invalid number of dates", message="Invalid number of dates.")
+                return
 
         successful_emails = []
         for receiver in range(0, len(receivers)):
@@ -89,10 +98,16 @@ class EmailSenderUI:
 
             successful_emails.append(self.email_sender_brain.send_email(receivers, receiver, email_subject, email_body))
 
+        # If atleast one email wasn't sent
         if False in successful_emails:
             messagebox.showwarning(title="Invalid receivers", message="One or more invalid receiver emails.")
 
+        # If atleast one email was sent
         if True in successful_emails:
             messagebox.showinfo(title="Sent successfully", message="Email sent successfully!")
+        # If no email was sent
         else:
             messagebox.showwarning(title="No email sent", message="No email sent.")
+
+        # Focus again on app window
+        self.window.focus_force()

@@ -4,12 +4,14 @@ from email.mime.multipart import MIMEMultipart
 from smtplib import SMTPAuthenticationError, SMTPRecipientsRefused
 from tkinter import messagebox
 
+
 class EmailSender:
 
     def __init__(self, email_sender, email_password):
         # Port
         self.PORT = 587
 
+        # Set up sender
         self.email_sender = email_sender
         self.email_password = email_password
 
