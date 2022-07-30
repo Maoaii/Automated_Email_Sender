@@ -1,5 +1,6 @@
 from tkinter import *
 from emailsenderbrain import EmailSender
+from tkinter import messagebox
 
 
 class EmailSenderUI:
@@ -77,6 +78,7 @@ class EmailSenderUI:
         if has_date_placeholder:
             dates = self.dates_box.get("1.0", END).split()  # Transform into a list
 
+        successful_emails = []
         for receiver in range(0, len(receivers)):
             email_body = self.email_body_box.get("1.0", END)
             # If there are placeholders, replace them with relevant keywords
@@ -85,4 +87,12 @@ class EmailSenderUI:
             if has_date_placeholder:
                 email_body = email_body.replace("[date]", f"{dates[receiver]}")
 
-            self.email_sender_brain.send_email(receivers, receiver, email_subject, email_body)
+            successful_emails.append(self.email_sender_brain.send_email(receivers, receiver, email_subject, email_body))
+
+        if False in successful_emails:
+            messagebox.showwarning(title="Invalid receivers", message="One or more invalid receiver emails.")
+
+        if True in successful_emails:
+            messagebox.showinfo(title="Sent successfully", message="Email sent successfully!")
+        else:
+            messagebox.showwarning(title="No email sent", message="No email sent.")

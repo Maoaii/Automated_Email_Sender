@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Automated_Email_Sender.iml" filepath="$PROJECT_DIR$/.idea/Automated_Email_Sender.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../../100_Days_Python_Bootcamp/Day34/.idea/Day34.iml" filepath="$PROJECT_DIR$/../../100_Days_Python_Bootcamp/Day34/.idea/Day34.iml" />
     </modules>
   </component>
 </project>

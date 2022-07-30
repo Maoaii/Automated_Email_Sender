@@ -1,7 +1,8 @@
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
-
+from smtplib import SMTPAuthenticationError, SMTPRecipientsRefused
+from tkinter import messagebox
 
 class EmailSender:
 
@@ -26,6 +27,24 @@ class EmailSender:
         text = msg.as_string()
         server = smtplib.SMTP('smtp.gmail.com', self.PORT)
         server.starttls()
-        server.login(self.email_sender, self.email_password)
-        server.sendmail(self.email_sender, receivers[receiver], text)
+
+        try:
+            server.login(self.email_sender, self.email_password)
+        except SMTPAuthenticationError:
+            # The user email or password is invalid
+            messagebox.showwarning(title="Sender not available", message="User email or password is invalid.")
+            quit()
+
+        successfully_sent = None
+        try:
+            server.sendmail(self.email_sender, receivers[receiver], text)
+        except SMTPRecipientsRefused:
+            # One or more recipients aren't valid
+            successfully_sent = False
+        else:
+            # Message sent successfully
+            successfully_sent = True
+
         server.quit()
+
+        return successfully_sent

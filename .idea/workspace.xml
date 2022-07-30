@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dbb6889e-e1ea-4367-b1bd-fdd678c332d4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Automated_Email_Sender.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Automated_Email_Sender.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emailsenderbrain.py" beforeDir="false" afterPath="$PROJECT_DIR$/emailsenderbrain.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +85,7 @@
       <updated>1656667342424</updated>
       <workItem from="1656667345016" duration="27000" />
       <workItem from="1658742039226" duration="551000" />
-      <workItem from="1659182251368" duration="3965000" />
+      <workItem from="1659182251368" duration="5376000" />
     </task>
     <servers />
   </component>
@@ -103,6 +107,6 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Automated_Email_Sender$main.coverage" NAME="main Coverage Results" MODIFIED="1659186186040" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Automated_Email_Sender$main.coverage" NAME="main Coverage Results" MODIFIED="1659187511362" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

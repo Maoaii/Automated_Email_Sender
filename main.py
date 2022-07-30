@@ -1,5 +1,4 @@
 import os
-import json
 from ui import EmailSenderUI
 from emailsenderbrain import EmailSender
 
