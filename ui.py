@@ -62,6 +62,7 @@ class EmailSenderUI:
         self.date_placeholder_state.get()
         self.date_placeholder_checkbutton.place(x=0, y=620)
 
+        # Save email button
         self.save_email_button = Button(text="Send email", command=self.send_email)
         self.save_email_button.place(x=630, y=550)
 

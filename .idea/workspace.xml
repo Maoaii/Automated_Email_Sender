@@ -7,9 +7,7 @@
     <list default="true" id="dbb6889e-e1ea-4367-b1bd-fdd678c332d4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/Automated_Email_Sender.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Automated_Email_Sender.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emailsenderbrain.py" beforeDir="false" afterPath="$PROJECT_DIR$/emailsenderbrain.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ui.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,6 +85,7 @@
       <workItem from="1658742039226" duration="551000" />
       <workItem from="1659182251368" duration="5481000" />
       <workItem from="1659193257255" duration="2659000" />
+      <workItem from="1659196784961" duration="770000" />
     </task>
     <servers />
   </component>

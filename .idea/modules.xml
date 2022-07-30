@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Automated_Email_Sender.iml" filepath="$PROJECT_DIR$/.idea/Automated_Email_Sender.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../Flashcard_App/.idea/Flashcard_App.iml" filepath="$PROJECT_DIR$/../Flashcard_App/.idea/Flashcard_App.iml" />
     </modules>
   </component>
 </project>
